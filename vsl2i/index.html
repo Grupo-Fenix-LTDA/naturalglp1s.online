@@ -1,0 +1,1925 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>
+			SugarBoost
+		</title>
+	
+
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com/">
+		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+		<!-- END Google Fonts -->
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/page.css">
+
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+			integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/fbcomments.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/vsl.css">
+
+
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+		<!-- Custom CSS -->
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+			integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous"
+			referrerpolicy="no-referrer"></script>
+
+		<!-- Preload Vturb -->
+<script>!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);</script>
+<link rel="preload" href="https://scripts.converteai.net/ee23f5b0-45e7-4e27-a038-209fb03d31cc/players/69e16614237c448f77dc8218/v4/player.js" as="script">
+<link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
+<link rel="dns-prefetch" href="https://cdn.converteai.net">
+<link rel="dns-prefetch" href="https://scripts.converteai.net">
+<link rel="dns-prefetch" href="https://images.converteai.net">
+<link rel="dns-prefetch" href="https://api.vturb.com.br">
+
+		<!-- Preload Vturb -->
+
+		<style>
+			.esconder {
+				display: none;
+			}
+		</style>
+	
+<style>
+/* Timer regressivo */
+.countdown-timer {
+    display: inline-block;
+    font-weight: 800;
+    font-size: 1.25em;
+    color: #ffd700;
+    background: rgba(0,0,0,0.35);
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-left: 8px;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 1px;
+}
+/* Potes flutuando */
+@keyframes floatBottle {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-10px); }
+}
+.products .item .item-img img { animation: floatBottle 3s ease-in-out infinite; }
+.products .item.promo .item-img img { animation: floatBottle 2.5s ease-in-out infinite; }
+/* Pulsante no BEST VALUE */
+@keyframes bestValuePulse {
+    0%, 100% { transform: scale(1);    box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.55); }
+    50%      { transform: scale(1.03); box-shadow: 0 0 0 14px rgba(220, 53, 69, 0); }
+}
+.products .item.best-pulse .wrapper {
+    animation: bestValuePulse 2s ease-in-out infinite;
+    border-radius: 10px;
+}
+/* Mouse animation no BEST VALUE */
+@keyframes mouseMoveClick {
+    0%   { transform: translate(-50%, -50%) translate(0, 0) scale(1); opacity: 0.9; }
+    40%  { transform: translate(-50%, -50%) translate(0, 0) scale(1); opacity: 1; }
+    50%  { transform: translate(-50%, -50%) translate(0, 0) scale(0.8); opacity: 1; }
+    60%  { transform: translate(-50%, -50%) translate(0, 0) scale(1); opacity: 1; }
+    100% { transform: translate(-50%, -50%) translate(40px, 10px) scale(1); opacity: 0; }
+}
+.mouse-click-anim {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 26px;
+    height: 26px;
+    pointer-events: none;
+    z-index: 5;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white' stroke='black' stroke-width='1'><path d='M5.5 3.5l13.5 7-5.5 2-2 5.5-6-14.5z'/></svg>");
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: mouseMoveClick 2.2s ease-in-out infinite;
+    filter: drop-shadow(0 2px 3px rgba(0,0,0,0.5));
+}
+.products .item.promo .item-buy { position: relative; overflow: visible; }
+@media (max-width: 767px) {
+    .countdown-timer { font-size: 1.1em; margin-left: 0; margin-top: 6px; }
+}
+</style>
+<script type="text/javascript" src="https://lp.naturalglp1s.online/track.js?rtkcmpid=69e670b5bb51cc39ae81f534"></script>
+
+	</head>
+
+	<body style="--autoplay-pulse-speed: 1.3333333333333333s;" cz-shortcut-listen="true">
+		<main id="container">
+			<!-- Header -->
+			<header class="container cnn-header sticky-top bg-white">
+				<div class="container-fluid px-3 px-lg-4">
+					<div class="d-flex align-items-center justify-content-between">
+
+						<!-- Left Side: Hamburger + Logo + Nav -->
+						<div class="d-flex align-items-center">
+							<!-- Hamburger Menu -->
+							<button class="btn border-0 p-0 me-3" type="button">
+								<i class="fas fa-bars fa-lg"></i>
+							</button>
+
+							<!-- Logo Section -->
+							<a href="#" class="d-flex align-items-center text-decoration-none me-4">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/CNN.svg" alt="CNN" class="cnn-logo">
+								<span class="cnn-health-text">Health</span>
+							</a>
+
+							<!-- Desktop Navigation (Left Aligned) -->
+							<nav class="desktop-nav d-flex align-items-center">
+								<a href="#" class="nav-link-custom">Life, But Better</a>
+								<a href="#" class="nav-link-custom">Fitness</a>
+								<a href="#" class="nav-link-custom">Food</a>
+								<a href="#" class="nav-link-custom">Sleep</a>
+								<a href="#" class="nav-link-custom">Mindfulness</a>
+								<a href="#" class="nav-link-custom">Relationships</a>
+							</nav>
+						</div>
+
+						<!-- Right Side: Actions -->
+						<div class="d-flex align-items-center header-actions gap-3">
+							<div class="d-none d-md-flex align-items-center">
+								<span class="live-dot"></span>
+								<span>Watch</span>
+							</div>
+							<div class="d-none d-md-flex align-items-center">
+								<i class="fas fa-headphones me-1"></i>
+								<span>Listen</span>
+							</div>
+							<button class="btn border-0 p-0">
+								<i class="fas fa-search"></i>
+							</button>
+
+							<button class="btn-signin">Sign In</button>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<!-- Main Content -->
+			<main class="container mt-3">
+
+				<!-- Life But Better Logo Section -->
+				<!-- <div class="cnn-subheader mb-4">
+					<img src="assets/img/life.png" alt="Life But Better" class="life-logo-img" style="height: 50px; object-fit: contain; object-position: left;">
+				</div> -->
+
+				<!-- Article Header -->
+				<div class="row">
+					<div class="col-12 col-lg-12">
+						<div class="d-flex align-items-start mt-4">
+							<img src="assets/img/profile.jpg" alt="Author" class="author-image me-3">
+							<div>
+								<div class="mb-1">
+									<span class="text-muted">By</span>
+									<a href="#" class="author-name">Dr. Mark Hyman</a>,
+									<span class="text-muted">CNN</span>
+								</div>
+								<div class="read-time mb-2">
+									10 min read • Published 7:41 AM EST, <span class="data_formatada">Thu November 14, 2024</span>
+								</div>
+								<div class="desktop-nav social-icons d-flex mt-2">
+									<!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
+									<a href="#"><svg class="icon-social-facebook" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M20.897 2H3.104C2.494 2 2 2.495 2 3.103v17.794C2 21.507 2.495 22 3.104 22h9.58v-7.744h-2.609v-3.02h2.607V9.01c0-2.585 1.578-3.992 3.883-3.992 1.104 0 2.194.083 2.47.12v2.797h-1.74c-1.252 0-1.506.596-1.506 1.47v1.832h2.999l-.388 3.019h-2.611V22h5.107c.61 0 1.104-.494 1.104-1.103V3.103C22 2.495 21.507 2 20.897 2">
+											</path>
+										</svg></a>
+									<a href="#"> <svg class="icon-social-twitter" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+											<path fill=""
+												d="M13.903 10.469 21.348 2h-1.764l-6.465 7.353L7.955 2H2l7.808 11.12L2 22h1.764l6.828-7.765L16.044 22H22l-8.097-11.531Zm-2.417 2.748-.791-1.107L4.4 3.3h2.71l5.08 7.11.791 1.107 6.604 9.242h-2.71l-5.389-7.542Z">
+											</path>
+										</svg></a>
+									<a href="#"><i class="fas fa-envelope"></i></a>
+									<a href="#"><i class="fas fa-link"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<!-- <h3 class="article-headline " style="color: #495057;">
+							<i>Hollywood's top Endocrinologist exposes...</i>
+							<br>
+						</h3> -->
+
+						<h2 class="video-title mb-3 fw-bold">
+							For the first time In Human History… Pastors and Harvard Scientists AGREE: This Holy-Oil “Trick” Reverses Insulin Resistance FOR GOOD (Even in Long-Term Type 2 Diabetics)
+						</h2>
+
+
+						<!-- <h3 class="drink-daily" style="font-weight: bold;color: #495057;">
+							(Without Side Effects)
+						</h3> -->
+
+						<main id="container">
+
+						</main>
+
+
+
+
+					</div>
+				</div>
+			</main>
+
+
+
+
+			<section class="principal">
+
+
+				<main id="container">
+
+					<div class="container container-principal menor-container-padding">
+						<!--<h1 style="font-weight: 500 !important;"><span style="color: #9c0505;">URGENT:</span> Expert reveals the 3 ingredients of the recipe to burn 15 lbs in 10 days <span style="color: #9c0505;"></span></h1>-->
+
+						<div class="video_vturb" id="video" data-vdelay="3394">
+							<!-- video code here -->
+<vturb-smartplayer id="vid-69e707ab05c3ed4453d8624f" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer> <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/ee23f5b0-45e7-4e27-a038-209fb03d31cc/players/69e707ab05c3ed4453d8624f/v4/player.js", s.async=!0,document.head.appendChild(s); </script>
+							<!-- video code here -->
+
+							<img src="assets/img/Referencias.png" class="img_adv">
+						</div>
+					</div>
+
+					<section class="principal">
+
+
+
+
+
+						<div class="esconder">
+
+							<!-- CTA Headline -->
+							<div class="py-3 py-md-5" style="background-color: var(--primary-color);">
+								<div class="container text-center">
+									<h2 class="title-claim mb-0 text-white">Claim Your Discounted SugarBoost While Stock Lasts!</h2>
+									<div class="strip3 flt">
+                                        <div class="container bdinpad">
+                                            <ul class="strip3-list">
+                                                <li>
+                                                    <img src="assets/img/hour-glass.png" alt="" class="hourglass">
+                                                    <strong>This offer expires in:</strong>
+                                                    <span class="countdown-timer" data-minutes="20">
+                                                        <span class="cd-min">20</span>:<span class="cd-sec">00</span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+							<!-- CTA Headline -->
+
+							<!-- Products -->
+							<section class="pb-4 products" id="scrolldown">
+								<div class="container">
+									<div class="shipbx my-4 my-md-5">
+										<div class="shipiconbx"><img src="assets/img/ship-icon.png" alt=""></div>
+										<p class="shipbx-txt1">Enjoy <span class="red">FREE SHIPPING</span> on 6-Bottle Orders!
+										</p>
+										<p class="shipbx-txt2">*For long-term results, we recommend choosing the
+											6&nbsp;bottle&nbsp;option
+										</p>
+									</div>
+								</div>
+								<div class="container">
+									<div class="row align-items-center">
+
+										<!-- 3 + 3 Bottles -->
+										<div class="col-12 col-md-4 mb-3 order-md-2">
+											<a href="https://lp.naturalglp1s.online/click/3" title="3 + 3 Bottles" class="item promo buylink best-pulse">
+												<div class="wrapper">
+													<div class="item-header">BEST VALUE!</div>
+													<div class="item-img">
+														<div class="supply"><b>BUY 3 GET + 3 FREE</b>180 DAY SUPPLY
+														</div>
+														<img src="assets/img/bottles/3e3.png" alt="3 + 3 Bottles">
+													</div>
+													<div class="item-info">
+														<div class="price">
+															<b><sup>$</sup>49</b><span>PER<br>BOTTLE</span>
+														</div>
+														<div class="savings">
+															<div><i class="fa fa-check-circle"></i> YOU SAVE $600!
+															</div>
+															<div><i class="fa fa-check-circle"></i> BIGGEST DISCOUNT
+															</div>
+															<!-- <div><i class="fa fa-check-circle"></i> + 4 FREE BONUSES
+																	</div> -->
+															<div><i class="fa fa-check-circle"></i> 60 DAYS
+																GUARANTEE</div>
+														</div>
+													</div>
+													<div class="item-buy">
+														<div class="buy-button">
+															<div class="buy-button-label">Buy Now</div>
+														<span class="mouse-click-anim" aria-hidden="true"></span>
+														</div>
+														<img src="assets/img/cards-dark.webp" alt="Cards" class="card-flags">
+													</div>
+													<div class="item-totals">
+														<div class="totals">Total: <s>$894</s> <b>$294</b></div>
+														<div class="shipping">+&nbsp;<span>FREE</span> SHIPPING
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<!-- 3 + 3 Bottles -->
+
+										<!-- 2 + 1 Bottles -->
+										<div class="col-12 col-md-4 mb-3 order-md-3">
+											<a href="https://lp.naturalglp1s.online/click/2" class="item buylink">
+												<div class="wrapper">
+													<div class="item-header text-white">BUNDLE!</div>
+													<div class="item-img">
+														<div class="supply"><b>BUY 2 GET + 1 FREE</b>90 DAY SUPPLY
+														</div>
+														<img src="assets/img/bottles/2e1.png" alt="2 + 1 Bottles">
+													</div>
+													<div class="item-info">
+														<div class="price">
+															<b><sup>$</sup>59</b><span>PER<br>BOTTLE</span>
+														</div>
+														<div class="savings">
+															<div><i class="fa fa-check-circle"></i>YOU SAVE $270!
+															</div>
+															<div><i class="fa fa-check-circle"></i>BIGGEST DISCOUNT
+															</div>
+															<div><i class="fa fa-check-circle"></i>60 DAYS GUARANTEE
+															</div>
+														</div>
+													</div>
+													<div class="item-buy">
+														<div class="buy-button">
+															<div class="buy-button-label">Buy Now</div>
+														</div>
+														<img src="assets/img/cards.webp" alt="Cards" class="card-flags">
+													</div>
+													<div class="item-totals">
+														<div class="totals">Total: <s>$447</s> <b>$177</b></div>
+														<div class="shipping">+&nbsp;SHIPPING
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<!-- 2 + 1 Bottles -->
+
+										<!-- 1 Bottles -->
+										<div class="col-12 col-md-4 mb-3 order-md-1">
+											<a href="https://lp.naturalglp1s.online/click/1" class="item buylink">
+												<div class="wrapper">
+													<div class="item-header text-white">BASIC!</div>
+													<div class="item-img">
+														<div class="supply"><b>1 BOTTLE</b>30 DAY SUPPLY</div>
+														<img src="assets/img/bottles/1.png">
+													</div>
+													<div class="item-info">
+														<div class="price">
+															<b><sup>$</sup>89</b><span>PER<br>BOTTLE</span>
+														</div>
+														<div class="savings">
+															<div> <i class="fa fa-check-circle"></i> YOU SAVE $60!
+															</div>
+															<div><i class="fa fa-check-circle"></i> BIGGEST DISCOUNT
+															</div>
+															<div><i class="fa fa-check-circle"></i> 60 DAYS
+																GUARANTEE</div>
+														</div>
+													</div>
+													<div class="item-buy">
+														<div class="buy-button">
+															<div class="buy-button-label">Buy Now</div>
+														</div>
+														<img src="assets/img/cards.webp" alt="Cards" class="card-flags">
+													</div>
+													<div class="item-totals">
+														<div class="totals">Total: <s>$149</s> <b>$89</b></div>
+														<div class="shipping">+ SHIPPING</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<!-- 1 Bottles -->
+
+									</div>
+								</div>
+							</section>
+							<!-- Products -->
+
+							<!-- Guarantee -->
+							<section id="guarantee" class="py-5">
+								<div class="container position-relative">
+									<div class="row align-items-center justify-content-center">
+										<div class="col-12 col-md-3 text-center">
+											<figure><img src="assets/img/guarantee-badge.webp" alt="Guarantee" class="mb-3"></figure>
+										</div>
+										<div class="col-12 col-md-9 text-start">
+											<h2 class="fs-2" style="font-weight: 700;">100% Satisfaction or Your
+												Money Back <br class="d-none d-md-block"><span style="color: #22e525;">60-Day Unconditional
+													Guarantee</span></h2>
+
+
+											<p>If for any reason within 60 days you're not satisfied with the product, just send an email to support@healthyconsumer.us and
+												we'll immediately buy back all the bottles from you at the same price you paid — no questions asked and no hassles.</p>
+											<p>Simply return the unused bottles, and we’ll buy them all back — even if they’re damaged.</p>
+											<p>No questions asked — it’s an unconditional guarantee! That’s how confident we are in SugarBoost.</p>
+											<p>And if you choose the 6-bottle package, your guarantee becomes even more powerful:</p>
+											<p>You’ll be automatically covered by our Lifetime Guarantee — meaning you can ask for your money back at any time in the
+												future, if you’re not completely satisfied.</p>
+											<p>So, click below and order your SugarBoost kit today, completely risk-free. We guarantee your results with our own money —
+												for life.</p>
+
+
+
+
+											<div class="d-flex gap-2 flex-wrap align-items-center justify-content-center mt-3 badges">
+												<figure><img src="assets/img/gmp.png" alt="Badge"></figure>
+												<figure><img src="assets/img/fda.png" alt="Badge"></figure>
+												<figure><img src="assets/img/nat.png" alt="Badge"></figure>
+												<figure><img src="assets/img/foreign.png" alt="Badge"></figure>
+												<figure><img src="assets/img/gmo.png" alt="Badge"></figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<!-- Guarantee -->
+
+							<!-- Testimonials -->
+							<div id="testimonials" class="py-5">
+								<div class="container" style="max-width: 1000px;">
+									<h2 class="my-3 mb-0 text-center" style="color: var(--primary-color); font-weight: 700;">
+										What People Are Saying About SugarBoost?
+									</h2>
+									<h4 class="text-center fw-bold mb-4">Real Life-Changing Results!</h4>
+									<p class="fw-bold mb-2 text-start text-black">Top reviews from the United States</p>
+									<div class="card-container">
+
+										<!-- LINDA -->
+										<div class="card">
+											<div class="row mx-auto">
+												<div class="col-lg-12">
+													<div class="texts">
+														<div class="purchase">
+															<img src="assets/img/depoimento/m1.jpg" alt="Profile">
+															<p><strong>Linda M.</strong> - Montclair, NJ<br></p>
+														</div>
+
+														<div class="d-flex flex-wrap gap-2 align-items-center">
+															<div class="d-flex gap-1 align-items-center flex-nowrap stars">
+																<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+																	class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+															</div>
+															<p class="m-0"><b>SugarBoost saved my life</b></p>
+														</div>
+
+														<div class="d-flex flex-column flex-sm-row align-items-sm-center flex-wrap verified">
+															<span class="me-sm-2">Verified Purchase</span>
+														</div>
+
+														<div class="text-user">
+															<p>
+																Last Sunday, my 6-year-old granddaughter asked me to join her for a walk in the park.
+																Her smile brought me to tears because, for the first time in years, I could walk beside her
+																without worrying about my blood sugar crashing. Without SugarBoost, I’m sure this wouldn’t
+																have been possible. Before taking it, I couldn’t even make it down my driveway without
+																exhaustion and burning feet stopping me.
+															</p>
+														</div>
+
+														<p class="reviewed-on mb-3">26 people found this helpful</p>
+
+														<div class="helpful-report">
+															<div class="d-flex align-center gap-3">
+																<div class="helpful">Helpful</div>
+																<div class="share"><i class="bi bi-share"></i>Share</div>
+															</div>
+															<div class="report">Report</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<!-- KAREN -->
+										<div class="card">
+											<div class="row mx-auto">
+												<div class="col-lg-12">
+													<div class="texts">
+
+														<div class="purchase">
+															<img src="assets/img/depoimento/m2.jpg" alt="Profile">
+															<p><strong>Karen R.</strong> - Boulder, CO<br></p>
+														</div>
+
+														<div class="d-flex flex-wrap gap-2 align-items-center">
+															<div class="d-flex gap-1 align-items-center flex-nowrap stars">
+																<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+																	class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+															</div>
+															<p class="m-0"><b>I Feel Like Myself Again!</b></p>
+														</div>
+
+														<div class="d-flex flex-column flex-sm-row align-items-sm-center flex-wrap verified">
+															<span class="me-sm-2">Verified Purchase</span>
+														</div>
+
+											
+
+														<div class="text-user">
+															<p>
+																Five months ago, my daughter wouldn’t let me go to the grocery store alone.
+																She always said it was “too dangerous” and that I might faint or lose control of my sugar levels.
+																But now, thanks to SugarBoost, I’m going to the market by myself, doing chores at home,
+																and even going to church every Sunday. I’m no longer reliant on anyone!
+															</p>
+														</div>
+
+														<p class="reviewed-on mb-3">21 people found this helpful</p>
+
+														<div class="helpful-report">
+															<div class="d-flex align-center gap-3">
+																<div class="helpful">Helpful</div>
+																<div class="share"><i class="bi bi-share"></i>Share</div>
+															</div>
+															<div class="report">Report</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<!-- MICHAEL -->
+										<div class="card">
+											<div class="row mx-auto">
+												<div class="col-lg-12">
+													<div class="texts">
+
+														<div class="purchase">
+															<img src="assets/img/depoimento/h1.webp" alt="Profile">
+															<p><strong>Michael W.</strong> - Seattle, WA<br></p>
+														</div>
+
+														<div class="d-flex flex-wrap gap-2 align-items-center">
+															<div class="d-flex gap-1 align-items-center flex-nowrap stars">
+																<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+																	class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+															</div>
+															<p class="m-0"><b>I Thought Diabetes Would Control Me Forever</b></p>
+														</div>
+
+														<div class="d-flex flex-column flex-sm-row align-items-sm-center flex-wrap verified">
+															<span class="me-sm-2">Verified Purchase</span>
+														</div>
+
+									
+
+														<div class="text-user">
+															<p>
+																After I turned 60, the blurry vision and burning in my feet got so bad I could barely sleep.
+																Thank God my doctor had heard of SugarBoost. He told me to take it every day, and I did so
+																religiously because I couldn’t bear the thought of losing my independence completely.
+																After two months of taking SugarBoost, I can proudly say the tingling is gone,
+																my sugar is stable, and I feel free again.
+															</p>
+														</div>
+
+														<p class="reviewed-on mb-3">19 people found this helpful</p>
+
+														<div class="helpful-report">
+															<div class="d-flex align-center gap-3">
+																<div class="helpful">Helpful</div>
+																<div class="share"><i class="bi bi-share"></i>Share</div>
+															</div>
+															<div class="report">Report</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<!-- BARBARA -->
+										<div class="card">
+											<div class="row mx-auto">
+												<div class="col-lg-12">
+													<div class="texts">
+
+														<div class="purchase">
+															<img src="assets/img/depoimento/m3.jpg" alt="Profile">
+															<p><strong>Barbara B.</strong> - Charleston, SC<br></p>
+														</div>
+
+														<div class="d-flex flex-wrap gap-2 align-items-center">
+															<div class="d-flex gap-1 align-items-center flex-nowrap stars">
+																<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+																	class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+															</div>
+															<p class="m-0"><b>The Best Support I’ve Tried</b></p>
+														</div>
+
+														<div class="d-flex flex-column flex-sm-row align-items-sm-center flex-wrap verified">
+															<span class="me-sm-2">Verified Purchase</span>
+														</div>
+
+													
+
+														<div class="text-user">
+															<p>
+																Do you know how it feels to grow more limited and frustrated with each passing day?
+																I lived like that for over eight years. That’s why I thank God every single day
+																for finding SugarBoost. Now I no longer struggle with constant sugar spikes,
+																restless nights, or the fear that my health would never get better.
+															</p>
+														</div>
+
+														<p class="reviewed-on mb-3">22 people found this helpful</p>
+
+														<div class="helpful-report">
+															<div class="d-flex align-center gap-3">
+																<div class="helpful">Helpful</div>
+																<div class="share"><i class="bi bi-share"></i>Share</div>
+															</div>
+															<div class="report">Report</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<!-- EMILY -->
+										<div class="card">
+											<div class="row mx-auto">
+												<div class="col-lg-12">
+													<div class="texts">
+
+														<div class="purchase">
+															<img src="assets/img/depoimento/m4.jpg" alt="Profile">
+															<p><strong>Emily R.</strong> - Brookline, MA<br></p>
+														</div>
+
+														<div class="d-flex flex-wrap gap-2 align-items-center">
+															<div class="d-flex gap-1 align-items-center flex-nowrap stars">
+																<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+																	class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+															</div>
+															<p class="m-0"><b>A Game-Changer for My Health</b></p>
+														</div>
+
+														<div class="d-flex flex-column flex-sm-row align-items-sm-center flex-wrap verified">
+															<span class="me-sm-2">Verified Purchase</span>
+														</div>
+
+														
+
+														<div class="text-user">
+															<p>
+																I used to sit silently at family dinners, terrified to eat because I’d feel dizzy
+																or spike in front of everyone. The shame and fear were unbearable — I’ll never forget it.
+																But after discovering SugarBoost, everything changed.
+																Just last week, I stood up and danced with my husband at our grandson’s birthday party.
+																I went from being the one everyone worried about to being the one inspiring hope —
+																a miracle I never thought possible.
+															</p>
+														</div>
+
+														<p class="reviewed-on mb-3">22 people found this helpful</p>
+
+														<div class="helpful-report">
+															<div class="d-flex align-center gap-3">
+																<div class="helpful">Helpful</div>
+																<div class="share"><i class="bi bi-share"></i>Share</div>
+															</div>
+															<div class="report">Report</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<!-- Testimonials -->
+
+
+							<div id="order-now"></div>
+
+							<!-- CTA Headline -->
+							<div class="py-3 py-md-5" style="background-color: var(--primary-color);">
+								<div class="container text-center">
+									<h2 class="title-claim mb-0 text-white">Claim Your Discounted SugarBoost While Stock Lasts!</h2>
+									<div class="strip3 flt">
+                                        <div class="container bdinpad">
+                                            <ul class="strip3-list">
+                                                <li>
+                                                    <img src="assets/img/hour-glass.png" alt="" class="hourglass">
+                                                    <strong>This offer expires in:</strong>
+                                                    <span class="countdown-timer" data-minutes="20">
+                                                        <span class="cd-min">20</span>:<span class="cd-sec">00</span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+							<!-- CTA Headline -->
+
+							<!-- Products -->
+
+							<section class="pb-4 products">
+								<div class="container">
+									<div class="shipbx my-4 my-md-5">
+										<div class="shipiconbx"><img src="assets/img/ship-icon.png" alt=""></div>
+										<p class="shipbx-txt1">Enjoy <span class="red">FREE SHIPPING</span> on 6-Bottle Orders!
+										</p>
+										<p class="shipbx-txt2">*For long-term results, we recommend choosing the
+											6&nbsp;bottle&nbsp;option
+										</p>
+									</div>
+								</div>
+								<div class="container">
+									<div class="row align-items-center">
+
+										<!-- 3 + 3 Bottles -->
+										<div class="col-12 col-md-4 mb-3 order-md-2">
+											<a href="https://lp.naturalglp1s.online/click/3" title="3 + 3 Bottles" class="item promo buylink best-pulse">
+												<div class="wrapper">
+													<div class="item-header">BEST VALUE!</div>
+													<div class="item-img">
+														<div class="supply"><b>BUY 3 GET + 3 FREE</b>180 DAY SUPPLY
+														</div>
+														<img src="assets/img/bottles/3e3.png" alt="3 + 3 Bottles">
+													</div>
+													<div class="item-info">
+														<div class="price">
+															<b><sup>$</sup>49</b><span>PER<br>BOTTLE</span>
+														</div>
+														<div class="savings">
+															<div><i class="fa fa-check-circle"></i> YOU SAVE $600!
+															</div>
+															<div><i class="fa fa-check-circle"></i> BIGGEST DISCOUNT
+															</div>
+															<!-- <div><i class="fa fa-check-circle"></i> + 4 FREE BONUSES
+																	</div> -->
+															<div><i class="fa fa-check-circle"></i> 60 DAYS
+																GUARANTEE</div>
+														</div>
+													</div>
+													<div class="item-buy">
+														<div class="buy-button">
+															<div class="buy-button-label">Buy Now</div>
+														<span class="mouse-click-anim" aria-hidden="true"></span>
+														</div>
+														<img src="assets/img/cards-dark.webp" alt="Cards" class="card-flags">
+													</div>
+													<div class="item-totals">
+														<div class="totals">Total: <s>$894</s> <b>$294</b></div>
+														<div class="shipping">+&nbsp;<span>FREE</span> SHIPPING
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<!-- 3 + 3 Bottles -->
+
+										<!-- 2 + 1 Bottles -->
+										<div class="col-12 col-md-4 mb-3 order-md-3">
+											<a href="https://lp.naturalglp1s.online/click/2" class="item buylink">
+												<div class="wrapper">
+													<div class="item-header text-white">BUNDLE!</div>
+													<div class="item-img">
+														<div class="supply"><b>BUY 2 GET + 1 FREE</b>90 DAY SUPPLY
+														</div>
+														<img src="assets/img/bottles/2e1.png" alt="2 + 1 Bottles">
+													</div>
+													<div class="item-info">
+														<div class="price">
+															<b><sup>$</sup>59</b><span>PER<br>BOTTLE</span>
+														</div>
+														<div class="savings">
+															<div><i class="fa fa-check-circle"></i>YOU SAVE $270!
+															</div>
+															<div><i class="fa fa-check-circle"></i>BIGGEST DISCOUNT
+															</div>
+															<div><i class="fa fa-check-circle"></i>60 DAYS GUARANTEE
+															</div>
+														</div>
+													</div>
+													<div class="item-buy">
+														<div class="buy-button">
+															<div class="buy-button-label">Buy Now</div>
+														</div>
+														<img src="assets/img/cards.webp" alt="Cards" class="card-flags">
+													</div>
+													<div class="item-totals">
+														<div class="totals">Total: <s>$447</s> <b>$177</b></div>
+														<div class="shipping">+&nbsp; SHIPPING
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<!-- 2 + 1 Bottles -->
+
+										<!-- 1 Bottles -->
+										<div class="col-12 col-md-4 mb-3 order-md-1">
+											<a href="https://lp.naturalglp1s.online/click/1" class="item buylink">
+												<div class="wrapper">
+													<div class="item-header text-white">BASIC!</div>
+													<div class="item-img">
+														<div class="supply"><b>1 BOTTLE</b>30 DAY SUPPLY</div>
+														<img src="assets/img/bottles/1.png">
+													</div>
+													<div class="item-info">
+														<div class="price">
+															<b><sup>$</sup>89</b><span>PER<br>BOTTLE</span>
+														</div>
+														<div class="savings">
+															<div> <i class="fa fa-check-circle"></i> YOU SAVE $60!
+															</div>
+															<div><i class="fa fa-check-circle"></i> BIGGEST DISCOUNT
+															</div>
+															<div><i class="fa fa-check-circle"></i> 60 DAYS GUARANTEE</div>
+														</div>
+													</div>
+													<div class="item-buy">
+														<div class="buy-button">
+															<div class="buy-button-label">Buy Now</div>
+														</div>
+														<img src="assets/img/cards.webp" alt="Cards" class="card-flags">
+													</div>
+													<div class="item-totals">
+														<div class="totals">Total: <s>$149</s> <b>$89</b></div>
+														<div class="shipping">+ SHIPPING</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<!-- 1 Bottles -->
+
+									</div>
+								</div>
+							</section>
+							<!-- Products -->
+
+
+
+
+							<!-- FAQ -->
+							<section id="faq" class="py-5">
+								<div class="container">
+									<h2 class="text-center text-white mb-4">Frequently Asked Questions</h2>
+									<div class="accordion" id="accordionExample">
+
+										<!-- Question 1 -->
+										<div class="accordion-item">
+											<h2 class="accordion-header">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+													aria-expanded="false" aria-controls="collapseOne">
+													Is SugarBoost safe to use?
+												</button>
+											</h2>
+											<div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+												<div class="accordion-body">
+													Absolutely. SugarBoost is made with natural ingredients, blended in clinically precise doses.
+													It’s manufactured in a U.S.-based lab that follows strict safety and quality regulations.
+													Still, if you have any medical conditions or are taking medications, it’s always a good idea
+													to consult your healthcare provider before starting.
+												</div>
+											</div>
+										</div>
+
+										<!-- Question 2 -->
+										<div class="accordion-item">
+											<h2 class="accordion-header">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+													aria-expanded="false" aria-controls="collapseTwo">
+													How long will it take to see results?
+												</button>
+											</h2>
+											<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+												<div class="accordion-body">
+													Some users notice more stable energy, reduced sugar cravings, and less bloating within the first few days.
+													Improved fasting glucose often begins within the first week, and many people report significant progress
+													within the first 10 days. For long-lasting, permanent results, the full 6-month treatment is strongly recommended.
+												</div>
+											</div>
+										</div>
+
+										<!-- Question 3 -->
+										<div class="accordion-item">
+											<h2 class="accordion-header">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+													aria-expanded="false" aria-controls="collapseThree">
+													Is SugarBoost sold on Amazon?
+												</button>
+											</h2>
+											<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+												<div class="accordion-body">
+													No. SugarBoost is only sold on this page, through the official website.
+													Buying elsewhere may expose you to counterfeit or expired products.
+													Always purchase directly here to ensure authenticity and guarantee coverage.
+												</div>
+											</div>
+										</div>
+
+										<!-- Question 4 -->
+										<div class="accordion-item">
+											<h2 class="accordion-header">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+													aria-expanded="false" aria-controls="collapseFour">
+													Will I need to follow a strict diet or exercise plan?
+												</button>
+											</h2>
+											<div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+												<div class="accordion-body">
+													Not at all. SugarBoost was designed for people who want to rebalance their glucose naturally
+													without restrictive routines. The formula works even if you continue enjoying your favorite foods
+													like pasta, bread, or desserts. Of course, healthy habits may enhance your results, but they’re not required.
+												</div>
+											</div>
+										</div>
+
+										<!-- Question 5 -->
+										<div class="accordion-item">
+											<h2 class="accordion-header">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+													aria-expanded="false" aria-controls="collapseFive">
+													What if I’m older or have had type 2 diabetes for years?
+												</button>
+											</h2>
+											<div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+												<div class="accordion-body">
+													That’s totally fine. SugarBoost works for men and women of all ages, including those over 60, 70, or even 80. Many
+													older users report stabilized blood sugar, improved energy, and reduced diabetic discomfort — even after years of
+													struggling. The formula is gentle yet powerful, regardless of age or stage.
+												</div>
+											</div>
+										</div>
+
+										<!-- Question 6 -->
+										<div class="accordion-item">
+											<h2 class="accordion-header">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+													aria-expanded="false" aria-controls="collapseSix">
+													Can I use SugarBoost with other supplements?
+												</button>
+											</h2>
+											<div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+												<div class="accordion-body">
+													In general, yes. But since SugarBoost already contains a complete, clinically tested blend for blood sugar and
+													insulin-support, we recommend checking with your doctor if you’re taking similar products — to avoid overlap or
+													excessive intake.
+												</div>
+											</div>
+										</div>
+
+										<!-- Question 7 -->
+										<div class="accordion-item">
+											<h2 class="accordion-header">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+													aria-expanded="false" aria-controls="collapseSeven">
+													How many bottles should I order?
+												</button>
+											</h2>
+											<div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+												<div class="accordion-body">
+													To unlock permanent results, we recommend the 6-bottle package. That’s the ideal duration to allow your body to
+													eliminate the pancreatic parasite, support beta cell regeneration, and stabilize blood sugar long-term — maintaining the
+													results even after you stop taking it. Plus, you’ll get exclusive bonuses and free shipping when you order today.
+												</div>
+											</div>
+										</div>
+
+										<!-- Question 8 -->
+										<div class="accordion-item">
+											<h2 class="accordion-header">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight"
+													aria-expanded="false" aria-controls="collapseEight">
+													Will my blood sugar stay balanced once I stop taking SugarBoost?
+												</button>
+											</h2>
+											<div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+												<div class="accordion-body">
+													Yes — as long as you complete the full 6-month treatment. SugarBoost is formulated to help you maintain your results
+													and avoid dangerous glucose rebounds.
+												</div>
+											</div>
+										</div>
+
+										<!-- Question 9 -->
+										<div class="accordion-item">
+											<h2 class="accordion-header">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine"
+													aria-expanded="false" aria-controls="collapseNine">
+													What if SugarBoost doesn’t work for me?
+												</button>
+											</h2>
+											<div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+												<div class="accordion-body">
+													We’re so confident in SugarBoost that we offer a 180-day money-back guarantee. If you're not completely satisfied —
+													even after finishing the full treatment — just send us an email and we’ll refund every penny.
+													And yes, you keep the bottles as a thank-you for giving it a try.
+												</div>
+											</div>
+										</div>
+
+										<!-- Question 10 -->
+										<div class="accordion-item">
+											<h2 class="accordion-header">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen"
+													aria-expanded="false" aria-controls="collapseTen">
+													How fast will I receive my order?
+												</button>
+											</h2>
+											<div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+												<div class="accordion-body">
+													Most SugarBoost orders are processed within 1–2 business days. Shipping usually takes 3–5 days within the U.S.
+													Orders that include the 6-bottle package receive priority fulfillment for faster delivery.
+												</div>
+											</div>
+										</div>
+
+										<!-- Question 11 -->
+										<div class="accordion-item">
+											<h2 class="accordion-header">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven"
+													aria-expanded="false" aria-controls="collapseEleven">
+													What’s the best way to take SugarBoost?
+												</button>
+											</h2>
+											<div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+												<div class="accordion-body">
+													Each night, simply place two drops of SugarBoost under your tongue before bed for optimal absorption and maximum blood
+													sugar and GLP-1–supporting effect. That’s it — no mixing, no prepping, no hassle. Just stay consistent and let the
+													formula do the work for you.
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+							</section>
+							<!-- FAQ -->
+
+							<!-- Who Is -->
+							<div id="who-is" class="my-4 my-md-5">
+								<div class="container" style="max-width: 1100px;">
+									<div class="p-3 p-md-4 rounded-4" style="background-color: var(--primary-color); border: 5px double #ffffff8e;">
+										<div class="row mx-auto justify-content-center align-items-center text-white">
+											<div class="col-md-4">
+												<h2 class="d-md-none fw-bold mb-3">Who Is Dr. Mark Hyman?</h2>
+												<img src="assets/img/doctor.jpg" alt="Doctor" style="width: 100%; max-width: fit-content;">
+											</div>
+											<div class="col-md-8 text-start">
+												<h2 class="d-none d-md-block fw-bold mb-3">Who Is Dr. Mark Hyman?
+												</h2>
+												<p>Dr. Mark Hyman is a world-renowned physician with over 35 years of clinical experience, former head of the Endocrinology
+													Department at the Cleveland Clinic, and bestselling author with millions of copies sold worldwide. He has trained at
+													Harvard-affiliated programs, appeared on major media outlets, and has built an online community of millions seeking
+													science-backed metabolic health solutions.</p>
+												<p>During his work with top research teams and functional medicine specialists, Dr. Hyman uncovered the real root cause of
+													type 2 diabetes — the dramatic loss of a critical metabolic protein that powers insulin. This breakthrough led to the
+													discovery of a unique natural oil compound capable of restoring this “fuel system,” allowing the body to regulate blood
+													sugar on its own again.</p>
+												<p>His team partnered with a U.S.-based, FDA-monitored laboratory to develop SugarBoost — an ultra-concentrated liquid
+													formula harnessing this natural compound to support healthy GLUT4 levels, revive insulin function, and help users regain
+													normal glucose control safely and naturally.</p>
+
+
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Who Is -->
+
+							<!-- Guarantee -->
+							<section id="guarantee" class="py-5">
+								<div class="container position-relative">
+									<div class="row align-items-center justify-content-center">
+										<div class="col-12 col-md-3 text-center">
+											<figure><img src="assets/img/guarantee-badge.webp" alt="Guarantee" class="mb-3"></figure>
+										</div>
+										<div class="col-12 col-md-9 text-start">
+											<h2 class="fs-2" style="font-weight: 700;">100% Satisfaction or Your
+												Money Back <br class="d-none d-md-block"><span style="color: #22e525;">60-Day
+													Unconditional
+													Guarantee</span></h2>
+											<p>If for any reason within 60 days you're not satisfied with the product, just send an email to support@healthyconsumer.us and
+												we'll immediately buy back all the bottles from you at the same price you paid — no questions asked and no hassles.</p>
+											<p>Simply return the unused bottles, and we’ll buy them all back — even if they’re damaged.</p>
+											<p>No questions asked — it’s an unconditional guarantee! That’s how confident we are in SugarBoost.</p>
+											<p>And if you choose the 6-bottle package, your guarantee becomes even more powerful:</p>
+											<p>You’ll be automatically covered by our Lifetime Guarantee — meaning you can ask for your money back at any time in the
+												future, if you’re not completely satisfied.</p>
+											<p>So, click below and order your SugarBoost kit today, completely risk-free. We guarantee your results with our own money —
+												for life.</p>
+
+
+
+											<div class="d-flex gap-2 flex-wrap align-items-center justify-content-center mt-3 badges">
+												<figure><img src="assets/img/gmp.png" alt="Badge"></figure>
+												<figure><img src="assets/img/fda.png" alt="Badge"></figure>
+												<figure><img src="assets/img/nat.png" alt="Badge"></figure>
+												<figure><img src="assets/img/foreign.png" alt="Badge"></figure>
+												<figure><img src="assets/img/gmo.png" alt="Badge"></figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<!-- Guarantee -->
+
+							<!-- CTA Headline -->
+							<div class="py-3 py-md-5" style="background-color: var(--primary-color);">
+								<div class="container text-center">
+									<h2 class="title-claim mb-0 text-white">Hurry! Limited Stock Available – Secure
+										Your SugarBoost Package at 50% Off Today!</h2>
+									<div class="strip3 flt">
+                                        <div class="container bdinpad">
+                                            <ul class="strip3-list">
+                                                <li>
+                                                    <img src="assets/img/hour-glass.png" alt="" class="hourglass">
+                                                    <strong>This offer expires in:</strong>
+                                                    <span class="countdown-timer" data-minutes="20">
+                                                        <span class="cd-min">20</span>:<span class="cd-sec">00</span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+							<!-- CTA Headline -->
+
+							<!-- Products -->
+
+							<section class="pb-4 products">
+								<div class="container">
+									<div class="shipbx my-4 my-md-5">
+										<div class="shipiconbx"><img src="assets/img/ship-icon.png" alt=""></div>
+										<p class="shipbx-txt1">Enjoy <span class="red">FREE SHIPPING</span> on 6-Bottle Orders!
+										</p>
+										<p class="shipbx-txt2">*For long-term results, we recommend choosing the
+											6&nbsp;bottle&nbsp;option
+										</p>
+									</div>
+								</div>
+								<div class="container">
+									<div class="row align-items-center">
+
+										<!-- 3 + 3 Bottles -->
+										<div class="col-12 col-md-4 mb-3 order-md-2">
+											<a href="https://lp.naturalglp1s.online/click/3" title="3 + 3 Bottles" class="item promo buylink best-pulse">
+												<div class="wrapper">
+													<div class="item-header">BEST VALUE!</div>
+													<div class="item-img">
+														<div class="supply"><b>BUY 3 GET + 3 FREE</b>180 DAY SUPPLY
+														</div>
+														<img src="assets/img/bottles/3e3.png" alt="3 + 3 Bottles">
+													</div>
+													<div class="item-info">
+														<div class="price">
+															<b><sup>$</sup>49</b><span>PER<br>BOTTLE</span>
+														</div>
+														<div class="savings">
+															<div><i class="fa fa-check-circle"></i> YOU SAVE $600!
+															</div>
+															<div><i class="fa fa-check-circle"></i> BIGGEST DISCOUNT
+															</div>
+															<!-- <div><i class="fa fa-check-circle"></i> + 4 FREE BONUSES
+																	</div> -->
+															<div><i class="fa fa-check-circle"></i> 60 DAYS
+																GUARANTEE</div>
+														</div>
+													</div>
+													<div class="item-buy">
+														<div class="buy-button">
+															<div class="buy-button-label">Buy Now</div>
+														<span class="mouse-click-anim" aria-hidden="true"></span>
+														</div>
+														<img src="assets/img/cards-dark.webp" alt="Cards" class="card-flags">
+													</div>
+													<div class="item-totals">
+														<div class="totals">Total: <s>$894</s> <b>$294</b></div>
+														<div class="shipping">+&nbsp;<span>FREE</span> SHIPPING
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<!-- 3 + 3 Bottles -->
+
+										<!-- 2 + 1 Bottles -->
+										<div class="col-12 col-md-4 mb-3 order-md-3">
+											<a href="https://lp.naturalglp1s.online/click/2" class="item buylink">
+												<div class="wrapper">
+													<div class="item-header text-white">BUNDLE!</div>
+													<div class="item-img">
+														<div class="supply"><b>BUY 2 GET + 1 FREE</b>90 DAY SUPPLY
+														</div>
+														<img src="assets/img/bottles/2e1.png" alt="2 + 1 Bottles">
+													</div>
+													<div class="item-info">
+														<div class="price">
+															<b><sup>$</sup>59</b><span>PER<br>BOTTLE</span>
+														</div>
+														<div class="savings">
+															<div><i class="fa fa-check-circle"></i>YOU SAVE $270!
+															</div>
+															<div><i class="fa fa-check-circle"></i>BIGGEST DISCOUNT
+															</div>
+															<div><i class="fa fa-check-circle"></i>60 DAYS GUARANTEE
+															</div>
+														</div>
+													</div>
+													<div class="item-buy">
+														<div class="buy-button">
+															<div class="buy-button-label">Buy Now</div>
+														</div>
+														<img src="assets/img/cards.webp" alt="Cards" class="card-flags">
+													</div>
+													<div class="item-totals">
+														<div class="totals">Total: <s>$447</s> <b>$177</b></div>
+														<div class="shipping">+&nbsp;SHIPPING
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<!-- 2 + 1 Bottles -->
+
+										<!-- 1 Bottles -->
+										<div class="col-12 col-md-4 mb-3 order-md-1">
+											<a href="https://lp.naturalglp1s.online/click/1" class="item buylink">
+												<div class="wrapper">
+													<div class="item-header text-white">BASIC!</div>
+													<div class="item-img">
+														<div class="supply"><b>1 BOTTLE</b>30 DAY SUPPLY</div>
+														<img src="assets/img/bottles/1.png">
+													</div>
+													<div class="item-info">
+														<div class="price">
+															<b><sup>$</sup>89</b><span>PER<br>BOTTLE</span>
+														</div>
+														<div class="savings">
+															<div> <i class="fa fa-check-circle"></i> YOU SAVE $60!
+															</div>
+															<div><i class="fa fa-check-circle"></i> BIGGEST DISCOUNT
+															</div>
+															<div><i class="fa fa-check-circle"></i> 60 DAYS
+																GUARANTEE</div>
+														</div>
+													</div>
+													<div class="item-buy">
+														<div class="buy-button">
+															<div class="buy-button-label">Buy Now</div>
+														</div>
+														<img src="assets/img/cards.webp" alt="Cards" class="card-flags">
+													</div>
+													<div class="item-totals">
+														<div class="totals">Total: <s>$149</s> <b>$89</b></div>
+														<div class="shipping">+ SHIPPING</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<!-- 1 Bottles -->
+
+									</div>
+								</div>
+							</section>
+							<!-- Products -->
+
+							<!-- References -->
+							<section id="references" class="py-3 py-md-5">
+								<div class="container">
+									<h2 class="text-center mb-4 mb-md-5 fw-bold" style="color: var(--primary-color);">Scientific References</h2>
+									<div class="row">
+										<div class="col-md">
+											<ol>
+												<li>
+													Nankar, R. P., Doble, M. (2015).
+													<i>Evaluation of p-coumaric acid and its derivatives as antidiabetic agents in vitro</i>.
+													Phytomedicine.
+													➤ p-Coumaric acid demonstrated inhibition of α-glucosidase and improved insulin sensitivity in vitro.
+												</li>
+
+												<li>
+													Hossen, M. J., et al. (2020).
+													<i>Protective effect of p-coumaric acid against oxidative stress and hepatic injury</i>.
+													Journal of Food Biochemistry.
+													➤ Antioxidant polyphenol shown to reduce liver inflammation and improve metabolic health markers.
+												</li>
+
+												<li>
+													White, A. M., Johnston, C. S. (2018).
+													<i>Vinegar ingestion at bedtime moderates waking glucose concentrations in adults with well-controlled type 2
+														diabetes</i>.
+													Diabetes Care.
+													➤ Apple cider vinegar improved fasting glucose overnight and enhanced insulin sensitivity.
+												</li>
+
+												<li>
+													Beheshti, Z., et al. (2021).
+													<i>Apple cider vinegar supplementation and glycemic control: A systematic review and meta-analysis</i>.
+													Complementary Therapies in Medicine.
+													➤ Meta-analysis confirming significant reductions in fasting glucose and HbA1c levels.
+												</li>
+
+												<li>
+													Palanisamy, A., et al. (2011).
+													<i>Alpha-lipoic acid improves beta-cell function and insulin sensitivity in type 2 diabetes</i>.
+													Diabetologia.
+													➤ Alpha-lipoic acid (found in burnt turmeric extract) supports regeneration of pancreatic β-cells and antioxidant
+													defense.
+												</li>
+											</ol>
+										</div>
+
+										<div class="col-md">
+											<ol start="6">
+												<li>
+													Shay, K. P., et al. (2009).
+													<i>Alpha-lipoic acid as a dietary supplement: Molecular mechanisms and therapeutic potential</i>.
+													Biochimica et Biophysica Acta.
+													➤ Describes anti-inflammatory and insulin-sensitizing properties of alpha-lipoic acid in metabolic syndrome.
+												</li>
+
+												<li>
+													Anderson, R. A., Broadhurst, C. L., et al. (2003).
+													<i>Isolation and characterization of polyphenol type-A polymers from cinnamon with insulin-like activity</i>.
+													Journal of Agricultural and Food Chemistry.
+													➤ Cinnamon extract mimics insulin activity and enhances glucose uptake by cells.
+												</li>
+
+												<li>
+													Akilen, R., et al. (2010).
+													<i>The effect of cinnamon on glucose control and lipid profiles in type 2 diabetes</i>.
+													Diabetic Medicine.
+													➤ Clinical trial showing improved fasting glucose, HbA1c, and cholesterol after cinnamon supplementation.
+												</li>
+
+												<li>
+													Chao, P. C., et al. (2019).
+													<i>Protective effects of lutein and zeaxanthin against diabetic retinopathy</i>.
+													Nutrients.
+													➤ Carotenoids from Ceylon cinnamon bark shown to protect retinal cells from oxidative and glucose-induced damage.
+												</li>
+
+												<li>
+													Ma, L., et al. (2017).
+													<i>Lutein and zeaxanthin and their potential roles in disease prevention</i>.
+													Advances in Nutrition.
+													➤ Review linking these carotenoids to improved eye and nerve health in diabetic conditions.
+												</li>
+											</ol>
+										</div>
+									</div>
+
+								</div>
+							</section>
+							<!-- References -->
+
+						</div><!--.after-quiz-->
+
+
+
+
+
+
+						<div class="container">
+							<div id="fb-comments" style="display: block;">
+								<h2 class="fb-heading"><b>36,158 Comments</b></h2>
+								<div class="comments-container">
+
+									<div class="comment" data-comment-id="1">
+										<img decoding="async" class="user-avatar" src="assets/img/coments/woman/01.jpg" alt="">
+										<div class="comment-data">
+											<div class="user">
+												<p class="name">Sophie Reynolds</p>
+												<p class="text">
+													I swear I thought it was just another one of those loooong, boring vids. Congrats, Dr. Mark Hyman, for sharing something that
+													actually WORKS!
+												</p>
+											</div>
+											<div class="buttons">
+												<like>Like</like>
+												<span>·</span>
+												<answer>Reply</answer>
+												<span>·</span>
+												<time>2h</time>
+											</div>
+										</div>
+										<likes>23</likes>
+									</div>
+
+									<div class="comment answer" data-comment-id="1a">
+										<img decoding="async" class="user-avatar" src="assets/img/coments/woman/02.jpg" alt="">
+										<div class="comment-data">
+											<div class="user">
+												<p class="name">Olivia Cooper</p>
+												<p class="text">Dr. Mark Hyman is amazingggg 👏</p>
+											</div>
+											<div class="buttons">
+												<like>Like</like>
+												<span>·</span>
+												<answer>Reply</answer>
+												<span>·</span>
+												<time>35 min</time>
+											</div>
+										</div>
+										<likes>17</likes>
+									</div>
+
+									<div class="comment answer" data-comment-id="1b">
+										<img decoding="async" class="user-avatar" src="assets/img/coments/man/01.jpg" alt="">
+										<div class="comment-data">
+											<div class="user">
+												<p class="name">Marcus Harris</p>
+												<p class="text">
+													He’s an angel, seriously. I tried the holy-oil trick and haven’t had a single sugar spike in months.
+												</p>
+											</div>
+											<div class="buttons">
+												<like>Like</like>
+												<span>·</span>
+												<answer>Reply</answer>
+												<span>·</span>
+												<time>7 min</time>
+											</div>
+										</div>
+										<likes>11</likes>
+									</div>
+
+									<div class="comment answer" data-comment-id="1c">
+										<img decoding="async" class="user-avatar" src="assets/img/coments/woman/03.jpg" alt="">
+										<div class="comment-data">
+											<div class="user">
+												<p class="name">Laura Mitchell</p>
+												<p class="text">
+													Exactly!! I’m walking more, sleeping better, and honestly feel years younger.
+												</p>
+											</div>
+											<div class="buttons">
+												<like>Like</like>
+												<span>·</span>
+												<answer>Reply</answer>
+												<span>·</span>
+												<time>6 min</time>
+											</div>
+										</div>
+										<likes>32</likes>
+									</div>
+
+									<div class="comment answer" data-comment-id="1d">
+										<img decoding="async" class="user-avatar" src="assets/img/coments/man/02.jpg" alt="">
+										<div class="comment-data">
+											<div class="user">
+												<p class="name">Dylan Foster</p>
+												<p class="text">
+													Same here! My feet don’t burn anymore — I feel like 30 years younger 😂
+												</p>
+											</div>
+											<div class="buttons">
+												<like>Like</like>
+												<span>·</span>
+												<answer>Reply</answer>
+												<span>·</span>
+												<time>5 min</time>
+											</div>
+										</div>
+										<likes>6</likes>
+									</div>
+
+									<!-- Comment 2 -->
+									<div class="comment" data-comment-id="2">
+										<img decoding="async" class="user-avatar" src="assets/img/coments/man/03.jpg" alt="">
+										<div class="comment-data">
+											<div class="user">
+												<p class="name">Nathan Brooks</p>
+												<p class="text">I dunno guys, is it legit or just marketing hype??</p>
+											</div>
+											<div class="buttons">
+												<like>Like</like>
+												<span>·</span>
+												<answer>Reply</answer>
+												<span>·</span>
+												<time>1h</time>
+											</div>
+										</div>
+										<likes>9</likes>
+									</div>
+
+									<div class="comment answer" data-comment-id="2a">
+										<img decoding="async" class="user-avatar" src="assets/img/coments/woman/04.jpg" alt="">
+										<div class="comment-data">
+											<div class="user">
+												<p class="name">Amber Jenkins</p>
+												<p class="text">
+													Nathan, I was super skeptical too, but it’s real. Try it for a few days and you’ll see. I couldn’t believe how fast it helped my
+													vision and stopped that burning in my feet…
+												</p>
+											</div>
+											<div class="buttons">
+												<like>Like</like>
+												<span>·</span>
+												<answer>Reply</answer>
+												<span>·</span>
+												<time>1h</time>
+											</div>
+										</div>
+										<likes>21</likes>
+									</div>
+
+									<div class="comment answer" data-comment-id="2b">
+										<img decoding="async" class="user-avatar" src="assets/img/coments/man/04.jpg" alt="">
+										<div class="comment-data">
+											<div class="user">
+												<p class="name">Eli Daniels</p>
+												<p class="text">
+													Same here. I hesitated too, but my sugar swings were getting unbearable. I could barely steady my hands in the morning because
+													of those crashes — this video from Dr. Mark Hyman about the holy-oil trick finally brought me relief.
+												</p>
+											</div>
+											<div class="buttons">
+												<like>Like</like>
+												<span>·</span>
+												<answer>Reply</answer>
+												<span>·</span>
+												<time>1h</time>
+											</div>
+										</div>
+										<likes>42</likes>
+									</div>
+
+									<!-- Comment 3 -->
+									<div class="comment" data-comment-id="3">
+										<img decoding="async" class="user-avatar" src="assets/img/coments/woman/05.jpg" alt="">
+										<div class="comment-data">
+											<div class="user">
+												<p class="name">Hannah Scott</p>
+												<p class="text">
+													Congrats, Dr. Mark! With so many scams online, it’s rare to find something truly helpful. You deserve all the success 👏👏
+												</p>
+											</div>
+											<div class="buttons">
+												<like>Like</like>
+												<span>·</span>
+												<answer>Reply</answer>
+												<span>·</span>
+												<time>23 min</time>
+											</div>
+										</div>
+										<likes>28</likes>
+									</div>
+
+									<!-- Comment 4 -->
+									<div class="comment" data-comment-id="4">
+										<img decoding="async" class="user-avatar" src="assets/img/coments/woman/06.jpg" alt="">
+										<div class="comment-data">
+											<div class="user">
+												<p class="name">Samantha Edwards</p>
+												<p class="text">
+													Dr. Hyman, I’ve been following you for years, but this holy-oil trick is by far your best discovery. Been doing it daily for 3
+													months and I feel stronger than my kids 😂😂
+												</p>
+											</div>
+											<div class="buttons">
+												<like>Like</like>
+												<span>·</span>
+												<answer>Reply</answer>
+												<span>·</span>
+												<time>2h</time>
+											</div>
+										</div>
+										<likes>67</likes>
+									</div>
+
+									<!-- Comment 5 -->
+									<div class="comment" data-comment-id="5">
+										<img decoding="async" class="user-avatar" src="assets/img/coments/man/05.jpg" alt="">
+										<div class="comment-data">
+											<div class="user">
+												<p class="name">Brian Turner</p>
+												<p class="text">
+													So glad I watched the video until the end! Thought it was another internet trick, but wow… it’s legit. Starting my holy-oil
+													morning trick tomorrow 😙
+												</p>
+											</div>
+											<div class="buttons">
+												<like>Like</like>
+												<span>·</span>
+												<answer>Reply</answer>
+												<span>·</span>
+												<time>1h</time>
+											</div>
+										</div>
+										<likes>53</likes>
+									</div>
+
+									<!-- Comment 6 -->
+									<div class="comment" data-comment-id="6">
+										<img decoding="async" class="user-avatar" src="assets/img/coments/woman/07.jpg" alt="">
+										<div class="comment-data">
+											<div class="user">
+												<p class="name">Natalie Parker</p>
+												<p class="text">Wait, what exactly is this holy-oil trick?</p>
+											</div>
+											<div class="buttons">
+												<like>Like</like>
+												<span>·</span>
+												<answer>Reply</answer>
+												<span>·</span>
+												<time>2h</time>
+											</div>
+										</div>
+										<likes>4</likes>
+									</div>
+
+									<div class="comment answer" data-comment-id="6a">
+										<img decoding="async" class="user-avatar" src="assets/img/coments/man/06.jpg" alt="">
+										<div class="comment-data">
+											<div class="user">
+												<p class="name">Jacob Morgan</p>
+												<p class="text">
+													He explains it near the beginning — that’s what got rid of all my sugar spikes and that weird burning in my feet 😍
+												</p>
+											</div>
+											<div class="buttons">
+												<like>Like</like>
+												<span>·</span>
+												<answer>Reply</answer>
+												<span>·</span>
+												<time>3 min</time>
+											</div>
+										</div>
+										<likes>32</likes>
+									</div>
+
+									<div class="comment answer" data-comment-id="6b">
+										<img decoding="async" class="user-avatar" src="assets/img/coments/man/07.jpg" alt="">
+										<div class="comment-data">
+											<div class="user">
+												<p class="name">Robert Hughes</p>
+												<p class="text">Same thing happened to me too!!</p>
+											</div>
+											<div class="buttons">
+												<like>Like</like>
+												<span>·</span>
+												<answer>Reply</answer>
+												<span>·</span>
+												<time>4 min</time>
+											</div>
+										</div>
+										<likes>76</likes>
+									</div>
+
+									<div class="comment answer" data-comment-id="6c">
+										<img decoding="async" class="user-avatar" src="assets/img/coments/woman/07.jpg" alt="">
+										<div class="comment-data">
+											<div class="user">
+												<p class="name">Natalie Parker</p>
+												<p class="text">That’s awesome, thanks for the heads-up. Totally gonna try it!</p>
+											</div>
+											<div class="buttons">
+												<like>Like</like>
+												<span>·</span>
+												<answer>Reply</answer>
+												<span>·</span>
+												<time>10 min</time>
+											</div>
+										</div>
+										<likes>66</likes>
+									</div>
+
+									<!-- Comment 7 -->
+									<div class="comment" data-comment-id="7">
+										<img decoding="async" class="user-avatar" src="assets/img/coments/man/08.jpg" alt="">
+										<div class="comment-data">
+											<div class="user">
+												<p class="name">Ethan Ross</p>
+												<p class="text">
+													Dr. Mark Hyman, you’re WONDERFUL! This made my dad’s diabetes disappear!! Shared your video with my whole family 🙏
+												</p>
+											</div>
+											<div class="buttons">
+												<like>Like</like>
+												<span>·</span>
+												<answer>Reply</answer>
+												<span>·</span>
+												<time>23 min</time>
+											</div>
+										</div>
+										<likes>23</likes>
+									</div>
+
+
+									<h4 class="comments-closed">This post is no longer receiving comments!</h4>
+								</div>
+							</div>
+						</div>
+
+
+
+
+					</section>
+				</main>
+
+			</section>
+
+
+			<footer class="text-center py-5" style="background-color: var(--primary-color);color: #fff;">
+				<div class="container text-white text-center">
+					<ul class="list-inline small mb-4 ">
+						<li class="list-inline-item"><a class="d-inline p-0 text-decoration-none" style="color: #fff;" href="https://sugarboost.us/terms.html"
+								target="_blank">Terms</a>
+						</li>
+						<li class="list-inline-item"><a class="d-inline p-0  text-decoration-none" href="https://sugarboost.us/privacy.html" target="_blank">Privacy</a>
+						</li>
+						<li class="list-inline-item"><a class="d-inline p-0  text-decoration-none" href="https://sugarboost.us/refund.html" target="_blank">Return
+								Policy</a></li>
+						<li class="list-inline-item"><a class="d-inline p-0  text-decoration-none" href="https://sugarboost.us/contact.html" target="_blank">Contact
+								Us</a></li>
+
+					</ul>
+					<div class="statements " style="font-size: 13px;">
+
+						<div class="my-4">
+							For Product Support, please contact the vendor <a href="support@healthyconsumer.us" target="_blank" class="d-inline p-0 " style="text-decoration: underline;">HERE</a>.
+							<br>
+
+						</div>
+					</div>
+					<p class="mb-0  " style="font-size: 13px;">© SugarBoost Research 2026. All Rights Reserved.
+					</p>
+				</div>
+			</footer>
+
+
+			<!-- Bootstrap -->
+			<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js" defer></script><script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+
+			<!-- Purchase Notifications VBL JS -->
+			<script type="text/javascript" src="assets/js/purchase-notifications-vbl.js"></script>
+
+			<script>
+				function formatarDataCNN(data) {
+					const dias = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+					const meses = [
+						"January", "February", "March", "April", "May", "June",
+						"July", "August", "September", "October", "November", "December"
+					];
+
+					const d = new Date(data);
+
+					const diaSemana = dias[d.getDay()];
+					const mes = meses[d.getMonth()];
+					const dia = d.getDate();
+					const ano = d.getFullYear();
+
+					return `${diaSemana} ${mes} ${dia}, ${ano}`;
+				}
+
+				// Aplica a todas as spans com a classe data_formatada
+				document.querySelectorAll(".data_formatada").forEach(el => {
+					el.textContent = formatarDataCNN(new Date());
+				});
+			</script>
+
+
+			<!-- Quiz -->
+			<!-- <script type="text/javascript" src="assets/js/quiz-vbl.js"></script> -->
+
+
+			<!-- Hide Comments after video -->
+			<script>
+				setInterval(() => {
+					const esconderDiv2 = document.querySelector('.esconder ');
+					const fbComments = document.querySelector('#fb-comments');
+					const footerInit = document.querySelector('#footer-init');
+					if (esconderDiv2 && fbComments) {
+						if (window.getComputedStyle(esconderDiv2).display !== 'none') {
+							fbComments.style.display = 'none';
+							// footerInit.style.display = 'none';
+						}
+					}
+				}, 500);
+			</script>
+
+
+
+
+
+			<script>
+				$(document).ready(function () {
+					var delaySeconds = 3394;
+					var player = document.querySelector("vturb-smartplayer");
+
+					player.addEventListener("player:ready", function () {
+						player.displayHiddenElements(delaySeconds, [".esconder"], { persist: true });
+
+						var initialized = false;
+
+						var checkInterval = setInterval(function () {
+							var $target = $(".esconder:visible").first();
+
+							if ($target.length && !initialized) {
+								initialized = true;
+								clearInterval(checkInterval);
+
+								// Scroll suave
+								// var $scrollTarget = $("#quiz");
+								// if ($scrollTarget.length) {
+								// 	$('html, body').animate({
+								// 		scrollTop: $scrollTarget.offset().top
+								// 	}, 800);
+								// }
+
+								var $scrollTarget = $("#scrolldown");
+								if ($scrollTarget.length) {
+									$('html, body').animate({
+										scrollTop: $scrollTarget.offset().top
+									}, 800);
+								}
+
+								// Manipular todos os .countdown dentro do .esconder visível
+								$target.find(".countdown").each(function () {
+									var $countdownEl = $(this);
+									var desiredValue = parseInt($countdownEl.text().trim().match(/\d+/)[0], 10);
+
+									var decrementTimer = setInterval(function () {
+										if (desiredValue > 48) {
+											desiredValue = Math.max(desiredValue - 6, 48);
+											$countdownEl.text(desiredValue);
+										} else {
+											clearInterval(decrementTimer);
+										}
+									}, 8000);
+								});
+
+							}
+						}, 500); // checa a cada 0.5s se ficou visível
+					});
+				});
+			</script>
+
+
+
+			<script>
+				window.backredirectUrl = "https://sugarboost.com";
+			</script>
+
+			
+			
+
+<script>
+(function() {
+    function startCountdown() {
+        document.querySelectorAll('.countdown-timer').forEach(function(timer) {
+            if (timer.dataset.started === 'true') return;
+            timer.dataset.started = 'true';
+            var totalSeconds = (parseInt(timer.dataset.minutes || '20', 10)) * 60;
+            var minEl = timer.querySelector('.cd-min');
+            var secEl = timer.querySelector('.cd-sec');
+            var tick = setInterval(function() {
+                if (totalSeconds <= 0) { clearInterval(tick); minEl.textContent='00'; secEl.textContent='00'; return; }
+                totalSeconds--;
+                var m = Math.floor(totalSeconds/60), s = totalSeconds%60;
+                minEl.textContent = m<10?'0'+m:''+m;
+                secEl.textContent = s<10?'0'+s:''+s;
+            }, 1000);
+        });
+    }
+    var observer = setInterval(function() {
+        var el = document.querySelector('.esconder');
+        if (el && window.getComputedStyle(el).display !== 'none') {
+            startCountdown();
+            clearInterval(observer);
+        }
+    }, 500);
+})();
+</script>
+
+	</body>
+
+</html>
