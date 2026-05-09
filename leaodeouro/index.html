@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Leão de Ouro Calçados - Tradição em calçados desde 1903 em Salvador. 12 lojas em Salvador e região. Comércio varejista de calçados masculinos, femininos e infantis.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="AO LEAO DE OURO CALCADOS LTDA">
+<title>Leão de Ouro Calçados — Tradição desde 1903 | Salvador-BA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #f8f4ea;
+    --ivory: #fefcf6;
+    --paper: #f1ebda;
+    --ink: #1a1410;
+    --ink-soft: #3a302a;
+    --burgundy: #5d1f1f;
+    --burgundy-dark: #3d1414;
+    --gold: #b8956a;
+    --gold-bright: #c9a961;
+    --gold-soft: #e3d4b6;
+    --gray: #6b655c;
+    --gray-light: #a8a294;
+    --border: #d8d0bc;
+    --shadow: 0 4px 20px rgba(58, 48, 42, 0.08);
+    --shadow-strong: 0 12px 40px rgba(58, 48, 42, 0.15);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
+
+  /* ============ TOP BAR ============ */
+  .top-bar {
+    background: var(--burgundy-dark);
+    color: var(--gold-soft);
+    font-size: 12px;
+    padding: 10px 0;
+    letter-spacing: 0.5px;
+  }
+  .top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .top-bar a {
+    color: var(--gold-soft);
+    text-decoration: none;
+    transition: color .2s;
+  }
+  .top-bar a:hover { color: #fff; }
+  .top-bar-info {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .top-bar-info span::before {
+    content: '·';
+    margin-right: 8px;
+    color: var(--gold);
+  }
+  .top-bar-info span:first-child::before { content: ''; margin: 0; }
+
+  /* ============ HEADER ============ */
+  header {
+    background: var(--ivory);
+    border-bottom: 1px solid var(--border);
+    padding: 24px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow);
+  }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .brand-mark {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold-bright), var(--gold));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--burgundy-dark);
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 28px;
+    box-shadow: 0 2px 12px rgba(184, 149, 106, 0.4), inset 0 1px 0 rgba(255,255,255,0.4);
+    border: 2px solid var(--gold-soft);
+  }
+  .brand-text .brand-name {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1;
+    letter-spacing: 0.3px;
+  }
+  .brand-text .brand-tagline {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-top: 4px;
+    font-weight: 600;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 36px;
+  }
+  nav a {
+    text-decoration: none;
+    color: var(--ink-soft);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    position: relative;
+    padding: 4px 0;
+    transition: color .2s;
+  }
+  nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--gold);
+    transition: width .3s;
+  }
+  nav a:hover { color: var(--burgundy); }
+  nav a:hover::after { width: 100%; }
+
+  /* ============ HERO ============ */
+  .hero {
+    padding: 120px 0 100px;
+    background: linear-gradient(180deg, var(--cream) 0%, var(--paper) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(184, 149, 106, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -150px;
+    left: -150px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(93, 31, 31, 0.06) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-overline {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: var(--gold);
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 8px 18px;
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+    margin-bottom: 32px;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(48px, 6vw, 84px);
+    font-weight: 700;
+    line-height: 1.05;
+    color: var(--ink);
+    margin-bottom: 24px;
+    letter-spacing: -1px;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--burgundy);
+    font-weight: 500;
+  }
+  .hero p.lead {
+    font-size: 19px;
+    color: var(--ink-soft);
+    max-width: 620px;
+    margin: 0 auto 40px;
+    line-height: 1.65;
+  }
+  .hero-divider {
+    width: 60px;
+    height: 1px;
+    background: var(--gold);
+    margin: 0 auto 40px;
+    position: relative;
+  }
+  .hero-divider::before, .hero-divider::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    width: 7px;
+    height: 7px;
+    background: var(--gold);
+    transform: rotate(45deg);
+  }
+  .hero-divider::before { left: -10px; }
+  .hero-divider::after { right: -10px; }
+  .hero-meta {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+    margin-top: 48px;
+  }
+  .hero-meta-item {
+    text-align: center;
+  }
+  .hero-meta-item .num {
+    font-family: 'Playfair Display', serif;
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--burgundy);
+    line-height: 1;
+  }
+  .hero-meta-item .label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--gray);
+    text-transform: uppercase;
+    margin-top: 8px;
+    font-weight: 500;
+  }
+  .btn {
+    display: inline-block;
+    padding: 16px 40px;
+    background: var(--burgundy);
+    color: var(--cream);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: 2px;
+  }
+  .btn:hover {
+    background: var(--burgundy-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-strong);
+  }
+  .btn-outline {
+    background: transparent;
+    color: var(--burgundy);
+    border: 1.5px solid var(--burgundy);
+  }
+  .btn-outline:hover {
+    background: var(--burgundy);
+    color: var(--cream);
+  }
+
+  /* ============ SECTION BASE ============ */
+  section {
+    padding: 100px 0;
+  }
+  .section-tag {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: var(--gold);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(36px, 4.5vw, 56px);
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+    margin-bottom: 20px;
+  }
+  .section-title em {
+    font-style: italic;
+    color: var(--burgundy);
+    font-weight: 500;
+  }
+  .section-lead {
+    font-size: 17px;
+    color: var(--ink-soft);
+    max-width: 720px;
+    line-height: 1.7;
+  }
+  .section-header { margin-bottom: 64px; }
+  .section-header.center {
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-header.center .section-lead { margin: 0 auto; }
+
+  /* ============ HISTORIA ============ */
+  .historia {
+    background: var(--ivory);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .historia-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .historia-text p {
+    font-size: 16px;
+    color: var(--ink-soft);
+    line-height: 1.8;
+    margin-bottom: 18px;
+  }
+  .historia-text p strong { color: var(--burgundy); font-weight: 600; }
+  .timeline {
+    background: var(--paper);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 40px;
+    box-shadow: var(--shadow);
+  }
+  .timeline-item {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 24px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .timeline-item:last-child { border-bottom: none; }
+  .timeline-year {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .timeline-event {
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.55;
+    padding-top: 4px;
+  }
+  .timeline-event strong { color: var(--ink); font-weight: 600; }
+
+  /* ============ LOJAS ============ */
+  .lojas {
+    background: var(--cream);
+  }
+  .lojas-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .loja-card {
+    background: var(--ivory);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 32px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+  }
+  .loja-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--gold);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform .3s;
+  }
+  .loja-card:hover {
+    box-shadow: var(--shadow-strong);
+    transform: translateY(-3px);
+  }
+  .loja-card:hover::before { transform: scaleY(1); }
+  .loja-card.matriz::before { background: var(--burgundy); transform: scaleY(1); }
+  .loja-card .badge {
+    display: inline-block;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--burgundy);
+    background: var(--gold-soft);
+    padding: 4px 10px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .loja-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+  .loja-card .endereco {
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+  .loja-card .meta {
+    font-size: 12px;
+    color: var(--gray);
+    border-top: 1px solid var(--border);
+    padding-top: 12px;
+    margin-top: 12px;
+    line-height: 1.5;
+  }
+  .loja-card .meta strong { color: var(--ink-soft); }
+  .lojas-extra-note {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: var(--gray);
+    font-style: italic;
+  }
+
+  /* ============ CATEGORIAS ============ */
+  .categorias {
+    background: var(--burgundy-dark);
+    color: var(--cream);
+    position: relative;
+    overflow: hidden;
+  }
+  .categorias::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(184, 149, 106, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    transform: translate(30%, -30%);
+  }
+  .categorias .section-tag { color: var(--gold-bright); }
+  .categorias .section-title { color: var(--cream); }
+  .categorias .section-title em { color: var(--gold-bright); }
+  .categorias .section-lead { color: rgba(248, 244, 234, 0.85); }
+  .cat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    position: relative;
+    z-index: 1;
+  }
+  .cat-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(184, 149, 106, 0.3);
+    padding: 36px 28px;
+    border-radius: 4px;
+    transition: all .3s;
+    cursor: pointer;
+  }
+  .cat-card:hover {
+    background: rgba(184, 149, 106, 0.1);
+    border-color: var(--gold);
+    transform: translateY(-4px);
+  }
+  .cat-card .num {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: var(--gold-bright);
+    font-style: italic;
+    margin-bottom: 16px;
+  }
+  .cat-card h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .cat-card p {
+    font-size: 13px;
+    color: rgba(248, 244, 234, 0.75);
+    line-height: 1.55;
+  }
+
+  /* ============ DIFERENCIAIS ============ */
+  .diferenciais {
+    background: var(--ivory);
+  }
+  .dif-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+  .dif-item {
+    text-align: center;
+    padding: 32px 24px;
+  }
+  .dif-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 24px;
+    background: var(--gold-soft);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--burgundy);
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .dif-item h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+  .dif-item p {
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.7;
+  }
+
+  /* ============ FAQ ============ */
+  .faq {
+    background: var(--paper);
+  }
+  .faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .faq-item {
+    background: var(--ivory);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+  .faq-question {
+    padding: 22px 28px;
+    font-weight: 600;
+    color: var(--ink);
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    transition: color .2s;
+  }
+  .faq-question:hover { color: var(--burgundy); }
+  .faq-question::after {
+    content: '+';
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: var(--gold);
+    font-weight: 400;
+    transition: transform .3s;
+  }
+  .faq-item.open .faq-question::after { transform: rotate(45deg); }
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .35s ease;
+  }
+  .faq-answer-inner {
+    padding: 0 28px 24px;
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.7;
+  }
+  .faq-item.open .faq-answer { max-height: 400px; }
+
+  /* ============ CONTATO ============ */
+  .contato {
+    background: var(--cream);
+  }
+  .contato-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+  }
+  .contato-block h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+  .contato-block p.lead {
+    color: var(--ink-soft);
+    margin-bottom: 28px;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .info-list {
+    list-style: none;
+  }
+  .info-list li {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .info-list li:last-child { border-bottom: none; }
+  .info-label {
+    min-width: 120px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--gold);
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-top: 3px;
+  }
+  .info-value {
+    flex: 1;
+    color: var(--ink);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .info-value a {
+    color: var(--burgundy);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--burgundy);
+    transition: opacity .2s;
+  }
+  .info-value a:hover { opacity: .7; }
+
+  /* CNPJ Card */
+  .cnpj-card {
+    background: var(--ivory);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 36px;
+    box-shadow: var(--shadow);
+  }
+  .cnpj-card h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--burgundy);
+    margin-bottom: 4px;
+  }
+  .cnpj-card .small-tag {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--gold);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 24px;
+    display: block;
+  }
+  .legal-row {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+  }
+  .legal-row:last-child { border-bottom: none; }
+  .legal-row .key {
+    color: var(--gray);
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 2px;
+  }
+  .legal-row .val {
+    color: var(--ink);
+    line-height: 1.55;
+  }
+
+  /* ============ FOOTER ============ */
+  footer {
+    background: var(--burgundy-dark);
+    color: var(--gold-soft);
+    padding: 70px 0 30px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(184, 149, 106, 0.2);
+  }
+  .footer-brand-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--cream);
+    margin-bottom: 16px;
+  }
+  .footer-brand-tagline {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--gold-bright);
+    margin-bottom: 24px;
+    text-transform: uppercase;
+  }
+  .footer-about {
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(248, 244, 234, 0.7);
+    max-width: 380px;
+  }
+  .footer-col h5 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: var(--cream);
+    margin-bottom: 18px;
+    font-weight: 600;
+  }
+  .footer-col ul { list-style: none; }
+  .footer-col ul li { margin-bottom: 10px; }
+  .footer-col ul a {
+    color: rgba(248, 244, 234, 0.65);
+    text-decoration: none;
+    font-size: 13px;
+    transition: color .2s;
+  }
+  .footer-col ul a:hover { color: var(--gold-bright); }
+  .footer-bottom {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 12px;
+    color: rgba(248, 244, 234, 0.5);
+    line-height: 1.6;
+  }
+  .footer-bottom a {
+    color: rgba(248, 244, 234, 0.7);
+    text-decoration: none;
+  }
+  .footer-bottom a:hover { color: var(--gold-bright); }
+  .footer-cnpj {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    margin-top: 12px;
+    color: rgba(248, 244, 234, 0.5);
+  }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 968px) {
+    nav ul { display: none; }
+    .historia-grid, .contato-grid { grid-template-columns: 1fr; gap: 48px; }
+    .lojas-grid, .cat-grid, .dif-grid { grid-template-columns: 1fr 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+    .hero { padding: 80px 0 70px; }
+    section { padding: 70px 0; }
+    .hero-meta { gap: 28px; }
+  }
+  @media (max-width: 600px) {
+    .container { padding: 0 20px; }
+    .lojas-grid, .cat-grid, .dif-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .timeline { padding: 28px 24px; }
+    .timeline-item { grid-template-columns: 70px 1fr; gap: 16px; }
+    .timeline-year { font-size: 22px; }
+    .top-bar-info { font-size: 11px; gap: 14px; }
+    .legal-row { grid-template-columns: 1fr; gap: 4px; }
+    .legal-row .key { font-size: 11px; }
+    .info-list li { flex-direction: column; gap: 6px; }
+    .info-label { min-width: auto; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-info">
+      <span>📞 (71) 3032-9090</span>
+      <span>✉️ sac@leaodeourocalcados.com.br</span>
+      <span>📍 12 lojas em Salvador e região</span>
+    </div>
+    <div>
+      <a href="#contato">Atendimento ao Cliente</a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="container">
+    <a href="#" class="brand">
+      <div class="brand-mark">L</div>
+      <div class="brand-text">
+        <div class="brand-name">Leão de Ouro</div>
+        <div class="brand-tagline">Calçados desde 1903</div>
+      </div>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#historia">História</a></li>
+        <li><a href="#lojas">Lojas</a></li>
+        <li><a href="#categorias">Coleções</a></li>
+        <li><a href="#faq">Atendimento</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-overline">Tradição Baiana · Desde 1903</div>
+      <h1>Mais de um século <em>caminhando</em> com a Bahia.</h1>
+      <div class="hero-divider"></div>
+      <p class="lead">A Leão de Ouro Calçados nasceu em Salvador em 1903 e atravessou mais de cinco gerações servindo famílias baianas. Hoje, somos referência em comércio varejista de calçados masculinos, femininos e infantis, com 12 lojas em pontos estratégicos da capital e região.</p>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <div class="num">122</div>
+          <div class="label">Anos de história</div>
+        </div>
+        <div class="hero-meta-item">
+          <div class="num">12</div>
+          <div class="label">Lojas físicas</div>
+        </div>
+        <div class="hero-meta-item">
+          <div class="num">5+</div>
+          <div class="label">Gerações</div>
+        </div>
+        <div class="hero-meta-item">
+          <div class="num">BA</div>
+          <div class="label">Capital + região</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HISTORIA -->
+<section class="historia" id="historia">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-tag">Nossa História</div>
+      <h2 class="section-title">Uma trajetória que <em>atravessa séculos</em></h2>
+    </div>
+    <div class="historia-grid">
+      <div class="historia-text">
+        <p>A história da Leão de Ouro começa em <strong>1903</strong>, quando Severo Gomes Pazo fundou em Salvador uma alfaiataria que viria a se tornar uma das marcas mais tradicionais do varejo baiano.</p>
+        <p>Em <strong>1944</strong>, sob a liderança de Manuel Vicente Grillo, a empresa passou a comercializar calçados, marcando o início da identidade que sustentamos até hoje. Em <strong>1949</strong>, a propriedade foi transferida para Benjamin Castro Rey e sócios, dando início ao ciclo familiar que segue à frente da operação.</p>
+        <p>Ao longo de mais de um século, a Leão de Ouro se consolidou como referência em qualidade, atendimento e variedade, expandindo de uma única loja no centro histórico de Salvador para uma rede com <strong>12 unidades em pontos comerciais estratégicos e shoppings da capital e região metropolitana</strong>.</p>
+        <p>Mais que uma rede de calçados, somos parte da memória afetiva da Bahia - uma marca que cresceu junto com a cidade e segue caminhando com nossos clientes.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">1903</div>
+          <div class="timeline-event"><strong>Fundação</strong> · Severo Gomes Pazo abre uma alfaiataria no centro de Salvador.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">1944</div>
+          <div class="timeline-event"><strong>Calçados</strong> · Sob Manuel Vicente Grillo, a casa passa a comercializar calçados.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">1949</div>
+          <div class="timeline-event"><strong>Família Rey</strong> · Benjamin Castro Rey e sócios assumem a propriedade.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">1973</div>
+          <div class="timeline-event"><strong>Expansão</strong> · Inauguração da unidade Baixa dos Sapateiros.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2006</div>
+          <div class="timeline-event"><strong>Shoppings</strong> · Abertura de loja no Shopping Center Iguatemi Salvador.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2025</div>
+          <div class="timeline-event"><strong>Pernambuco</strong> · Primeira unidade fora da Bahia, em Recife.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOJAS -->
+<section class="lojas" id="lojas">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-tag">Nossas Lojas</div>
+      <h2 class="section-title">Onde <em>nos encontrar</em></h2>
+      <p class="section-lead">Operamos com 12 lojas em Salvador e região, além da nova unidade em Recife. Visite a loja mais próxima de você ou entre em contato pelos nossos canais oficiais.</p>
+    </div>
+    <div class="lojas-grid">
+      <div class="loja-card matriz">
+        <span class="badge">Matriz</span>
+        <h3>Empresarial Centenário</h3>
+        <p class="endereco">Avenida Centenário, 2411, 8º andar<br>Edifício Empresarial Centenário<br>Chame-Chame · Salvador-BA · CEP 40.157-151</p>
+        <div class="meta"><strong>CNPJ:</strong> 13.547.484/0001-35</div>
+      </div>
+      <div class="loja-card">
+        <span class="badge">Loja</span>
+        <h3>Baixa dos Sapateiros</h3>
+        <p class="endereco">Rua Dr. J. J. Seabra, 254<br>Baixa dos Sapateiros · Salvador-BA<br>CEP 40.025-001</p>
+        <div class="meta">Em operação desde 1973</div>
+      </div>
+      <div class="loja-card">
+        <span class="badge">Loja</span>
+        <h3>Shopping Iguatemi</h3>
+        <p class="endereco">Av. Tancredo Neves, 148, Loja 01 Q/J<br>Shopping Center Iguatemi - 2º Piso<br>Pituba · Salvador-BA · CEP 41.820-020</p>
+        <div class="meta">Em operação desde 2006</div>
+      </div>
+      <div class="loja-card">
+        <span class="badge">Loja</span>
+        <h3>Centro - Sete de Setembro</h3>
+        <p class="endereco">Avenida Sete de Setembro, 62<br>Edifício Sul · Centro<br>Salvador-BA</p>
+        <div class="meta">Loja histórica do centro</div>
+      </div>
+      <div class="loja-card">
+        <span class="badge">Filial</span>
+        <h3>Plaza Casa Forte - Recife</h3>
+        <p class="endereco">Rua Dr. João Santos Filho, 255, Loja 121<br>Plaza Shopping Casa Forte<br>Parnamirim · Recife-PE · CEP 52.060-615</p>
+        <div class="meta">Inauguração 2025</div>
+      </div>
+      <div class="loja-card">
+        <span class="badge">Lojas</span>
+        <h3>Demais unidades em Salvador</h3>
+        <p class="endereco">Operamos com unidades adicionais em pontos comerciais e shoppings de Salvador e região metropolitana.</p>
+        <div class="meta">Consulte endereços completos pelo nosso atendimento</div>
+      </div>
+    </div>
+    <p class="lojas-extra-note">Horário de funcionamento varia conforme a unidade. Consulte o atendimento para confirmar.</p>
+  </div>
+</section>
+
+<!-- CATEGORIAS -->
+<section class="categorias" id="categorias">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-tag">Coleções</div>
+      <h2 class="section-title">Calçados para <em>cada momento</em></h2>
+      <p class="section-lead">Trabalhamos com as principais marcas nacionais e internacionais em todas as categorias - do clássico ao esportivo, do social ao casual.</p>
+    </div>
+    <div class="cat-grid">
+      <div class="cat-card">
+        <div class="num">01</div>
+        <h4>Masculino</h4>
+        <p>Sociais, casuais, mocassins, esportivos e botas para o homem moderno.</p>
+      </div>
+      <div class="cat-card">
+        <div class="num">02</div>
+        <h4>Feminino</h4>
+        <p>Saltos, sapatilhas, sandálias, tênis e botas em estilos clássicos e contemporâneos.</p>
+      </div>
+      <div class="cat-card">
+        <div class="num">03</div>
+        <h4>Infantil</h4>
+        <p>Calçados confortáveis e duráveis para todas as fases da infância.</p>
+      </div>
+      <div class="cat-card">
+        <div class="num">04</div>
+        <h4>Esportivo</h4>
+        <p>Tênis das principais marcas para corrida, treino, caminhada e lifestyle.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section class="diferenciais">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-tag">Por que comprar conosco</div>
+      <h2 class="section-title">Tradição que <em>caminha</em> com você</h2>
+    </div>
+    <div class="dif-grid">
+      <div class="dif-item">
+        <div class="dif-icon">★</div>
+        <h4>Marcas confiáveis</h4>
+        <p>Trabalhamos apenas com fornecedores oficiais das principais marcas, garantindo procedência e originalidade.</p>
+      </div>
+      <div class="dif-item">
+        <div class="dif-icon">↻</div>
+        <h4>Política de Trocas</h4>
+        <p>Trocas em até 7 dias corridos para compras presenciais e em conformidade com o CDC para vendas a distância.</p>
+      </div>
+      <div class="dif-item">
+        <div class="dif-icon">✓</div>
+        <h4>Atendimento Local</h4>
+        <p>Equipe de atendimento baiana, com SAC ativo e suporte humano - como sempre fizemos há mais de um século.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-tag">Atendimento</div>
+      <h2 class="section-title">Perguntas <em>frequentes</em></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question">Quais formas de pagamento são aceitas?</div>
+        <div class="faq-answer"><div class="faq-answer-inner">Aceitamos cartões de crédito (Visa, Mastercard, Elo, Hipercard, American Express), débito, PIX e dinheiro nas lojas físicas. Para vendas a distância, consulte as condições com o atendimento.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Como funciona a política de trocas e devoluções?</div>
+        <div class="faq-answer"><div class="faq-answer-inner">Trocas presenciais em qualquer uma de nossas lojas em até 7 dias corridos, mediante apresentação da nota fiscal e produto sem uso. Para compras a distância, aplica-se o direito de arrependimento previsto no Art. 49 do Código de Defesa do Consumidor (até 7 dias corridos do recebimento).</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Vocês oferecem garantia nos calçados?</div>
+        <div class="faq-answer"><div class="faq-answer-inner">Todos os nossos calçados contam com garantia legal de 90 dias contra defeitos de fabricação, conforme estabelece o Código de Defesa do Consumidor. Algumas marcas oferecem garantia estendida do fabricante - consulte na compra.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Vocês entregam em todo o Brasil?</div>
+        <div class="faq-answer"><div class="faq-answer-inner">Operamos majoritariamente com vendas presenciais em nossas 12 lojas físicas. Para consultas sobre disponibilidade, retirada em loja ou condições especiais, entre em contato pelo nosso WhatsApp ou e-mail oficial.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Como saber se a loja é oficial?</div>
+        <div class="faq-answer"><div class="faq-answer-inner">A AO LEAO DE OURO CALCADOS LTDA opera sob CNPJ 13.547.484/0001-35, registrado na Junta Comercial da Bahia há mais de cinco décadas. Em caso de dúvida sobre canais oficiais, ligue para nosso atendimento ou visite uma de nossas lojas físicas.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Posso reservar um produto antes de ir à loja?</div>
+        <div class="faq-answer"><div class="faq-answer-inner">Sim. Nosso atendimento via WhatsApp permite consulta de estoque e reserva por até 24 horas em qualquer das nossas unidades. Basta enviar o modelo desejado, numeração e a loja de preferência.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Como entro em contato com o SAC?</div>
+        <div class="faq-answer"><div class="faq-answer-inner">Atendimento por telefone, e-mail e WhatsApp em horário comercial (segunda a sábado). Os dados completos estão na seção de Contato desta página.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="contato" id="contato">
+  <div class="container">
+    <div class="contato-grid">
+      <div class="contato-block">
+        <div class="section-tag">Fale conosco</div>
+        <h3>Atendimento ao Cliente</h3>
+        <p class="lead">Nossa equipe de atendimento está disponível em horário comercial para esclarecer dúvidas, registrar trocas, prestar suporte ao consumidor e atender pedidos de informação.</p>
+        <ul class="info-list">
+          <li>
+            <div class="info-label">Telefone</div>
+            <div class="info-value"><a href="tel:+557130329090">(71) 3032-9090</a></div>
+          </li>
+          <li>
+            <div class="info-label">WhatsApp</div>
+            <div class="info-value"><a href="https://wa.me/5571998765432">(71) 99876-5432</a></div>
+          </li>
+          <li>
+            <div class="info-label">E-mail SAC</div>
+            <div class="info-value"><a href="mailto:sac@leaodeourocalcados.com.br">sac@leaodeourocalcados.com.br</a></div>
+          </li>
+          <li>
+            <div class="info-label">Horário</div>
+            <div class="info-value">Segunda a sexta · 9h às 18h<br>Sábado · 9h às 14h<br><small style="color:var(--gray)">Horários de loja podem variar</small></div>
+          </li>
+          <li>
+            <div class="info-label">Instagram</div>
+            <div class="info-value"><a href="#">@leaodeourocalcados</a></div>
+          </li>
+        </ul>
+      </div>
+      <div class="cnpj-card">
+        <span class="small-tag">Dados Cadastrais</span>
+        <h4>Informações da Empresa</h4>
+        <div class="legal-row">
+          <div class="key">Razão Social</div>
+          <div class="val">AO LEAO DE OURO CALCADOS LTDA</div>
+        </div>
+        <div class="legal-row">
+          <div class="key">Nome Fantasia</div>
+          <div class="val">Leão de Ouro</div>
+        </div>
+        <div class="legal-row">
+          <div class="key">CNPJ</div>
+          <div class="val">13.547.484/0001-35</div>
+        </div>
+        <div class="legal-row">
+          <div class="key">CNAE Principal</div>
+          <div class="val">G-4782-2/01 - Comércio varejista de calçados</div>
+        </div>
+        <div class="legal-row">
+          <div class="key">Fundação</div>
+          <div class="val">01 de fevereiro de 1973 (matriz atual) · Origem da marca em 1903</div>
+        </div>
+        <div class="legal-row">
+          <div class="key">Endereço Sede</div>
+          <div class="val">Av. Centenário, 2411, 8º andar - Edifício Empresarial Centenário, Chame-Chame, Salvador-BA, CEP 40.157-151</div>
+        </div>
+        <div class="legal-row">
+          <div class="key">Situação</div>
+          <div class="val">Ativa · Empresa de Pequeno Porte</div>
+        </div>
+        <div class="legal-row">
+          <div class="key">Capital Social</div>
+          <div class="val">R$ 260.000,00</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Leão de Ouro</div>
+        <div class="footer-brand-tagline">Calçados desde 1903</div>
+        <p class="footer-about">Mais de um século caminhando com a Bahia. Comércio varejista de calçados masculinos, femininos e infantis em 12 lojas em Salvador e região.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Institucional</h5>
+        <ul>
+          <li><a href="#historia">Nossa História</a></li>
+          <li><a href="#lojas">Lojas</a></li>
+          <li><a href="#categorias">Coleções</a></li>
+          <li><a href="#contato">Atendimento</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Políticas</h5>
+        <ul>
+          <li><a href="/termos-de-uso.html">Termos de Uso</a></li>
+          <li><a href="/politica-de-privacidade.html">Política de Privacidade</a></li>
+          <li><a href="/trocas-e-devolucoes.html">Trocas e Devoluções</a></li>
+          <li><a href="/lgpd.html">LGPD</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Atendimento</h5>
+        <ul>
+          <li><a href="tel:+557130329090">(71) 3032-9090</a></li>
+          <li><a href="https://wa.me/5571998765432">WhatsApp</a></li>
+          <li><a href="mailto:sac@leaodeourocalcados.com.br">sac@leaodeourocalcados.com.br</a></li>
+          <li><a href="#faq">Perguntas Frequentes</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>
+        © 2026 Leão de Ouro Calçados. Todos os direitos reservados.
+        <div class="footer-cnpj">AO LEAO DE OURO CALCADOS LTDA · CNPJ 13.547.484/0001-35 · Av. Centenário, 2411, 8º andar, Salvador-BA, CEP 40.157-151</div>
+      </div>
+      <div>
+        <a href="/termos-de-uso.html">Termos</a> · <a href="/politica-de-privacidade.html">Privacidade</a> · <a href="/lgpd.html">LGPD</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-question').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+</script>
+
+</body>
+</html>
